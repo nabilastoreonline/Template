@@ -1,36 +1,55 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nabila Store - Solusi Digital Terpercaya</title>
+    <title>Nabila Store - Jasa Website, SEO & Digital Marketing Profesional</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
-        .service-card:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-slate-50 text-slate-900">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <nav class="glass-nav fixed w-full z-50 top-0">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0 flex items-center">
-                    <span class="text-2xl font-bold text-blue-700">Nabila<span class="text-gray-900">Store</span></span>
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white">
+                        <i data-lucide="layout"></i>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-blue-600">NABILA STORE</span>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="hover:text-blue-600 font-medium">Beranda</a>
-                    <a href="#services" class="hover:text-blue-600 font-medium">Layanan</a>
-                    <a href="#portfolio" class="hover:text-blue-600 font-medium">Portofolio</a>
-                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Hubungi Kami</a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+                    <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
+                    <a href="#layanan" class="hover:text-blue-600 transition">Layanan</a>
+                    <a href="#portofolio" class="hover:text-blue-600 transition">Portofolio</a>
+                    <a href="https://wa.me/6282132302928" target="_blank" class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">Konsultasi Gratis</a>
                 </div>
+
+                <!-- Mobile Menu Button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-                        <i class="fas fa-bars text-2xl"></i>
+                    <button id="menu-btn" class="p-2">
+                        <i data-lucide="menu"></i>
                     </button>
                 </div>
             </div>
@@ -38,163 +57,336 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 gradient-bg text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-                Transformasi Bisnis Anda <br>ke Dunia Digital
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-blue-600 uppercase bg-blue-50 rounded-full">
+                Partner Bisnis Online Terpercaya
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Solusi <span class="gradient-text">Website & SEO</span> <br>Untuk Dominasi Pasar Digital
             </h1>
-            <p class="text-xl mb-10 text-blue-100 max-w-2xl mx-auto">
-                Nabila Store menyediakan jasa pembuatan website, aplikasi mobile, dan optimasi SEO untuk meningkatkan performa bisnis Anda secara global.
+            <p class="text-lg text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Nabila Store membantu UMKM hingga korporasi membangun kehadiran digital yang kuat, ranking 1 di Google, dan konversi penjualan yang tinggi melalui teknologi mutakhir.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="#services" class="bg-white text-blue-700 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg">Lihat Layanan</a>
-                <a href="#contact" class="bg-blue-500 border border-blue-400 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-600 transition">Konsultasi Gratis</a>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/6282132302928" target="_blank" class="px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold text-lg hover:bg-blue-700 transition shadow-xl shadow-blue-200 flex items-center justify-center gap-2">
+                    Mulai Proyek Sekarang <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+                <a href="#portofolio" class="px-8 py-4 bg-white border border-slate-200 text-slate-700 rounded-2xl font-bold text-lg hover:bg-slate-50 transition flex items-center justify-center gap-2">
+                    Lihat Hasil Kerja
+                </a>
+            </div>
+            
+            <!-- Hero Image / Mockup -->
+            <div class="mt-16 relative">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-50 to-transparent z-10 h-32 bottom-0"></div>
+                <div class="bg-white p-4 rounded-3xl shadow-2xl border border-slate-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="Dashboard Bisnis Digital" class="rounded-2xl w-full object-cover h-[300px] md:h-[500px]">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="layanan" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Layanan Unggulan Kami</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <h2 class="text-4xl font-bold mb-4 text-slate-900">Layanan Unggulan Kami</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto italic">Pilih solusi yang tepat untuk akselerasi bisnis Anda</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Web Dev -->
-                <div class="bg-white p-8 rounded-2xl shadow-xl service-card border border-gray-100">
-                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 text-blue-600 text-2xl">
-                        <i class="fas fa-code"></i>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Website -->
+                <div class="p-8 rounded-3xl border border-slate-100 bg-slate-50 card-hover">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="monitor" class="w-8 h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Pembuatan Website</h3>
-                    <p class="text-gray-600 mb-6">Mulai dari Landing Page, E-commerce, hingga Company Profile profesional yang responsif dan cepat.</p>
-                    <ul class="text-sm space-y-2 text-gray-500 mb-6">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Desain Modern & Custom</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Mobile Friendly</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Integrasi Media Sosial</li>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Jasa Website</h3>
+                    <p class="text-slate-600 text-sm mb-6">Company profile, UMKM, hingga E-Commerce dengan desain responsif.</p>
+                    <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Mobile Friendly</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> SEO Ready</li>
                     </ul>
+                    <a href="https://wa.me/6282132302928" target="_blank" class="text-blue-600 font-semibold flex items-center gap-1 hover:underline">Detail <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
                 </div>
 
-                <!-- App Dev -->
-                <div class="bg-white p-8 rounded-2xl shadow-xl service-card border border-gray-100">
-                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6 text-purple-600 text-2xl">
-                        <i class="fas fa-mobile-alt"></i>
+                <!-- Apps -->
+                <div class="p-8 rounded-3xl border border-slate-100 bg-slate-50 card-hover">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="smartphone" class="w-8 h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Pembuatan Aplikasi</h3>
-                    <p class="text-gray-600 mb-6">Kembangkan aplikasi Android dan iOS untuk memudahkan interaksi dengan pelanggan Anda di mana saja.</p>
-                    <ul class="text-sm space-y-2 text-gray-500 mb-6">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Android & iOS Support</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> UI/UX yang Intuitif</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Sistem Manajemen Data</li>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Jasa Aplikasi</h3>
+                    <p class="text-slate-600 text-sm mb-6">Pengembangan aplikasi Android, iOS, dan sistem kasir (POS) kustom.</p>
+                    <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Android & iOS</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Cloud Backend</li>
                     </ul>
+                    <a href="https://wa.me/6282132302928" target="_blank" class="text-purple-600 font-semibold flex items-center gap-1 hover:underline">Detail <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
                 </div>
 
                 <!-- SEO -->
-                <div class="bg-white p-8 rounded-2xl shadow-xl service-card border border-gray-100">
-                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-green-600 text-2xl">
-                        <i class="fas fa-chart-line"></i>
+                <div class="p-8 rounded-3xl border border-slate-100 bg-slate-50 card-hover">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="search" class="w-8 h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Optimasi SEO</h3>
-                    <p class="text-gray-600 mb-6">Tingkatkan peringkat website Anda di mesin pencari Google untuk mendatangkan lebih banyak pengunjung.</p>
-                    <ul class="text-sm space-y-2 text-gray-500 mb-6">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Riset Keyword Mendalam</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> On-Page & Off-Page SEO</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Laporan Performa Bulanan</li>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Jasa SEO</h3>
+                    <p class="text-slate-600 text-sm mb-6">Optimasi On-page, Off-page, dan Local SEO untuk merajai Google.</p>
+                    <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Riset Keyword</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Backlink Berkualitas</li>
                     </ul>
+                    <a href="https://wa.me/6282132302928" target="_blank" class="text-orange-600 font-semibold flex items-center gap-1 hover:underline">Detail <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Marketing -->
+                <div class="p-8 rounded-3xl border border-slate-100 bg-slate-50 card-hover">
+                    <div class="w-14 h-14 bg-pink-100 text-pink-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="megaphone" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Digital Marketing</h3>
+                    <p class="text-slate-600 text-sm mb-6">Manajemen Iklan Facebook, Instagram, Google, dan TikTok Ads.</p>
+                    <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Ads Optimization</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Content Strategy</li>
+                    </ul>
+                    <a href="https://wa.me/6282132302928" target="_blank" class="text-pink-600 font-semibold flex items-center gap-1 hover:underline">Detail <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Statistics -->
-    <section class="py-16 bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <!-- Stats / Trust -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl font-bold mb-2">500+</div>
+                <div class="text-blue-100">Project Selesai</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold mb-2">200+</div>
+                <div class="text-blue-100">Klien SEO Aktif</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold mb-2">98%</div>
+                <div class="text-blue-100">Kepuasan Klien</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold mb-2">24/7</div>
+                <div class="text-blue-100">Support Teknis</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portofolio" class="py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
                 <div>
-                    <div class="text-4xl font-bold text-blue-500 mb-2">150+</div>
-                    <div class="text-gray-400">Proyek Selesai</div>
+                    <h2 class="text-4xl font-bold mb-4">Hasil Kerja Kami</h2>
+                    <p class="text-slate-500 max-w-md">Kumpulan proyek terbaik yang telah kami kerjakan untuk klien dari berbagai industri.</p>
                 </div>
-                <div>
-                    <div class="text-4xl font-bold text-blue-500 mb-2">98%</div>
-                    <div class="text-gray-400">Klien Puas</div>
+                <div class="mt-6 md:mt-0 space-x-2">
+                    <button class="px-5 py-2 bg-blue-600 text-white rounded-full text-sm font-semibold">Semua</button>
+                    <button class="px-5 py-2 bg-white text-slate-600 border border-slate-200 rounded-full text-sm font-semibold hover:bg-slate-50">Website</button>
+                    <button class="px-5 py-2 bg-white text-slate-600 border border-slate-200 rounded-full text-sm font-semibold hover:bg-slate-50">Aplikasi</button>
                 </div>
-                <div>
-                    <div class="text-4xl font-bold text-blue-500 mb-2">5+</div>
-                    <div class="text-gray-400">Tahun Pengalaman</div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="group overflow-hidden rounded-3xl bg-white border border-slate-100 shadow-sm">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Work Example" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">E-Commerce</span>
+                        <h4 class="text-xl font-bold mt-2">Global Fashion Store</h4>
+                        <p class="text-slate-500 text-sm mt-2 italic">Optimasi kecepatan & UI/UX yang modern.</p>
+                    </div>
                 </div>
-                <div>
-                    <div class="text-4xl font-bold text-blue-500 mb-2">24/7</div>
-                    <div class="text-gray-400">Dukungan Teknis</div>
+                <!-- Portfolio Item 2 -->
+                <div class="group overflow-hidden rounded-3xl bg-white border border-slate-100 shadow-sm">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bbbda536639a?auto=format&fit=crop&w=600&q=80" alt="SEO Results" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-orange-600 uppercase tracking-widest">SEO Case Study</span>
+                        <h4 class="text-xl font-bold mt-2">Kenaikan Trafik 300%</h4>
+                        <p class="text-slate-500 text-sm mt-2 italic">Meningkatkan visibilitas kata kunci utama.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="group overflow-hidden rounded-3xl bg-white border border-slate-100 shadow-sm">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80" alt="Application Example" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-purple-600 uppercase tracking-widest">Mobile App</span>
+                        <h4 class="text-xl font-bold mt-2">Sistem Antrian RS</h4>
+                        <p class="text-slate-500 text-sm mt-2 italic">Aplikasi manajemen antrian real-time.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row gap-12">
-                <div class="lg:w-1/2">
-                    <h2 class="text-3xl font-bold mb-6">Mari Diskusikan Proyek Anda</h2>
-                    <p class="text-gray-600 mb-8">Punya ide luar biasa? Tim ahli kami di Nabila Store siap mewujudkannya menjadi produk digital yang kompetitif.</p>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mr-4">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <span>nabilastoreonline@gmail.com</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 mr-4">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <span>+62 821 3230 2928</span>
-                        </div>
-                   <button type="button" onclick="handleForm()" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition"> <a href="https://Wa.me/6282132302928">KIRIM PESAN</a></button>
+    <!-- Contact & Conversion -->
+    <section id="kontak" class="py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-blue-900 rounded-[40px] overflow-hidden shadow-2xl relative">
+                <!-- Background pattern -->
+                <div class="absolute inset-0 opacity-10 pointer-events-none">
+                    <div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -mr-48 -mt-48"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-400 rounded-full -ml-32 -mb-32"></div>
                 </div>
-                <div class="lg:w-1/2 bg-gray-50 p-8 rounded-2xl">
-                    
+
+                <div class="flex flex-col lg:flex-row relative z-10">
+                    <div class="lg:w-1/2 p-12 lg:p-20 text-white">
+                        <h2 class="text-4xl font-bold mb-8 italic">Sudah Siap Memulai Transformasi Digital?</h2>
+                        <p class="text-blue-100 text-lg mb-12">Konsultasikan kebutuhan Anda secara gratis dengan tim ahli kami. Kami akan memberikan estimasi biaya dan strategi terbaik.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-blue-800 rounded-xl flex items-center justify-center">
+                                    <i data-lucide="phone" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-blue-300">Hubungi Kami</p>
+                                    <p class="font-bold text-lg">+62 821-3230-2928</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-blue-800 rounded-xl flex items-center justify-center">
+                                    <i data-lucide="mail" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-blue-300">Email Marketing</p>
+                                    <p class="font-bold text-lg">nabilastoreonline@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/2 p-12 lg:p-20 bg-white">
+                        <h3 class="text-2xl font-bold mb-6 text-slate-900">Kirim Penawaran</h3>
+                        <form class="space-y-4" onsubmit="return false">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Nama Lengkap</label>
+                                <input type="text" placeholder="Masukkan nama Anda" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700 mb-2">Email</label>
+                                    <input type="email" placeholder="Alamat email" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700 mb-2">Nomor WA</label>
+                                    <input type="text" placeholder="Contoh: 082..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Pilih Layanan</label>
+                                <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition bg-white">
+                                    <option>Jasa Website</option>
+                                    <option>Jasa Aplikasi</option>
+                                    <option>Jasa SEO</option>
+                                    <option>Digital Marketing</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Pesan Tambahan</label>
+                                <textarea rows="3" placeholder="Ceritakan kebutuhan bisnis Anda..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition"></textarea>
+                            </div>
+                            <a href="https://wa.me/6282132302928" target="_blank" class="block w-full py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition shadow-lg text-center">Kirim Pesan Sekarang</a>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-8 md:mb-0">
-                    <span class="text-2xl font-bold">Nabila<span class="text-blue-500">Store</span></span>
-                    <p class="mt-2 text-gray-400 text-sm italic">Partner Digital Strategis Anda.</p>
+    <footer class="bg-white pt-20 pb-10 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white">
+                        <i data-lucide="layout" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-blue-600 uppercase">NABILA STORE</span>
                 </div>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    Digital Agency berpengalaman membantu pertumbuhan bisnis Indonesia melalui teknologi dan strategi pemasaran digital yang terukur.
+                </p>
+            </div>
+            
+            <div>
+                <h5 class="font-bold mb-6">Layanan</h5>
+                <ul class="text-slate-500 space-y-4 text-sm">
+                    <li><a href="https://wa.me/6282132302928" target="_blank" class="hover:text-blue-600 transition">Pembuatan Website</a></li>
+                    <li><a href="https://wa.me/6282132302928" target="_blank" class="hover:text-blue-600 transition">Aplikasi Mobile</a></li>
+                    <li><a href="https://wa.me/6282132302928" target="_blank" class="hover:text-blue-600 transition">Audit SEO</a></li>
+                    <li><a href="https://wa.me/6282132302928" target="_blank" class="hover:text-blue-600 transition">Iklan Digital</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-bold mb-6">Perusahaan</h5>
+                <ul class="text-slate-500 space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-blue-600 transition">Tentang Kami</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Tim Kami</a></li>
+                    <li><a href="#portofolio" class="hover:text-blue-600 transition">Portofolio</a></li>
+                    <li><a href="#kontak" class="hover:text-blue-600 transition">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-bold mb-6">Ikuti Kami</h5>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition">
+                        <i data-lucide="facebook" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
                 </div>
             </div>
-            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-                &copy; 2024 Nabila Store. Seluruh hak cipta dilindungi.
-            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 pt-10 border-t border-slate-100 text-center">
+            <p class="text-slate-400 text-xs italic">
+                © 2023 Nabila Store. Seluruh Hak Cipta Dilindungi. Partner resmi digitalisasi UMKM.
+            </p>
         </div>
     </footer>
 
-    <script>
-        function handleForm() {
-            const form = document.getElementById('contactForm');
-            const msg = document.getElementById('successMsg');
-            form.classList.add('hidden');
-            msg.classList.remove('hidden');
-        }
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6282132302928" target="_blank" class="fixed bottom-8 right-8 w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition z-50">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
 
-        // Mobile Menu Toggle logic
-        const btn = document.getElementById('mobile-menu-button');
-        btn.addEventListener('click', () => {
-            // Logic for mobile menu would go here (e.g., toggling a class)
-            console.log('Mobile menu clicked');
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Menu Toggle (Mobile)
+        const menuBtn = document.getElementById('menu-btn');
+        menuBtn.addEventListener('click', () => {
+            const menu = document.querySelector('.hidden.md\\:flex');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-20');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('w-full');
+            menu.classList.toggle('bg-white');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('space-y-4');
+            menu.classList.toggle('shadow-lg');
         });
     </script>
 </body>
