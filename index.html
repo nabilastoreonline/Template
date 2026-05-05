@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabila Store - Solusi Digital Terpercaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .service-card:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-blue-700">Nabila<span class="text-gray-900">Store</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-600 font-medium">Beranda</a>
+                    <a href="#services" class="hover:text-blue-600 font-medium">Layanan</a>
+                    <a href="#portfolio" class="hover:text-blue-600 font-medium">Portofolio</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Hubungi Kami</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Transformasi Bisnis Anda <br>ke Dunia Digital
+            </h1>
+            <p class="text-xl mb-10 text-blue-100 max-w-2xl mx-auto">
+                Nabila Store menyediakan jasa pembuatan website, aplikasi mobile, dan optimasi SEO untuk meningkatkan performa bisnis Anda secara global.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#services" class="bg-white text-blue-700 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg">Lihat Layanan</a>
+                <a href="#contact" class="bg-blue-500 border border-blue-400 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-600 transition">Konsultasi Gratis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Layanan Unggulan Kami</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Web Dev -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl service-card border border-gray-100">
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 text-blue-600 text-2xl">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Pembuatan Website</h3>
+                    <p class="text-gray-600 mb-6">Mulai dari Landing Page, E-commerce, hingga Company Profile profesional yang responsif dan cepat.</p>
+                    <ul class="text-sm space-y-2 text-gray-500 mb-6">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Desain Modern & Custom</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Mobile Friendly</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Integrasi Media Sosial</li>
+                    </ul>
+                </div>
+
+                <!-- App Dev -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl service-card border border-gray-100">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6 text-purple-600 text-2xl">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Pembuatan Aplikasi</h3>
+                    <p class="text-gray-600 mb-6">Kembangkan aplikasi Android dan iOS untuk memudahkan interaksi dengan pelanggan Anda di mana saja.</p>
+                    <ul class="text-sm space-y-2 text-gray-500 mb-6">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Android & iOS Support</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> UI/UX yang Intuitif</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Sistem Manajemen Data</li>
+                    </ul>
+                </div>
+
+                <!-- SEO -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl service-card border border-gray-100">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-green-600 text-2xl">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Optimasi SEO</h3>
+                    <p class="text-gray-600 mb-6">Tingkatkan peringkat website Anda di mesin pencari Google untuk mendatangkan lebih banyak pengunjung.</p>
+                    <ul class="text-sm space-y-2 text-gray-500 mb-6">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Riset Keyword Mendalam</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> On-Page & Off-Page SEO</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Laporan Performa Bulanan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-blue-500 mb-2">150+</div>
+                    <div class="text-gray-400">Proyek Selesai</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-500 mb-2">98%</div>
+                    <div class="text-gray-400">Klien Puas</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-500 mb-2">5+</div>
+                    <div class="text-gray-400">Tahun Pengalaman</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-500 mb-2">24/7</div>
+                    <div class="text-gray-400">Dukungan Teknis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Mari Diskusikan Proyek Anda</h2>
+                    <p class="text-gray-600 mb-8">Punya ide luar biasa? Tim ahli kami di Nabila Store siap mewujudkannya menjadi produk digital yang kompetitif.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span>kontak@nabilastore.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 mr-4">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <span>+62 812 3456 7890</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 bg-gray-50 p-8 rounded-2xl">
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Masukkan nama Anda">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Pilih Layanan</label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                                <option>Pembuatan Website</option>
+                                <option>Pembuatan Aplikasi</option>
+                                <option>Optimasi SEO</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Pesan</label>
+                            <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Ceritakan kebutuhan Anda"></textarea>
+                        </div>
+                        <button type="button" onclick="handleForm()" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">Kirim Pesan</button>
+                    </form>
+                    <div id="successMsg" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg text-center font-medium">
+                        Pesan Anda berhasil terkirim! Tim kami akan segera menghubungi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <span class="text-2xl font-bold">Nabila<span class="text-blue-500">Store</span></span>
+                    <p class="mt-2 text-gray-400 text-sm italic">Partner Digital Strategis Anda.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                &copy; 2024 Nabila Store. Seluruh hak cipta dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleForm() {
+            const form = document.getElementById('contactForm');
+            const msg = document.getElementById('successMsg');
+            form.classList.add('hidden');
+            msg.classList.remove('hidden');
+        }
+
+        // Mobile Menu Toggle logic
+        const btn = document.getElementById('mobile-menu-button');
+        btn.addEventListener('click', () => {
+            // Logic for mobile menu would go here (e.g., toggling a class)
+            console.log('Mobile menu clicked');
+        });
+    </script>
+</body>
+</html>
